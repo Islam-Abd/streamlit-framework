@@ -51,7 +51,6 @@ close1=close0.loc[filter]
 import plotly.express as px
 
 fig = px.line(close1, y="Closing Price", title='Stock Closing Price',labels={"index": "Date"})
-fig.show()
-
+st.plotly_chart(fig)
 
 
