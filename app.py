@@ -17,9 +17,9 @@ import numpy as np
 syear =pd.DataFrame(['2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021'],columns=['Year'])
 smonth=pd.DataFrame(['January','February','March','April','May','June','July','August','September','October','November','December'],columns=['Month'])
 
-stock = st.text_input("Stock Ticker", 'aapl')
-option1 = st.selectbox('Select a year',syear['Year'])
-option2 = st.selectbox('Select a month',smonth['Month'])
+stock = st.sidebar.text_input("Stock Ticker", 'aapl')
+option1 = st.sidebar.selectbox('Select a year',syear['Year'])
+option2 = st.sidebar.selectbox('Select a month',smonth['Month'])
 
 
 month=option2
