@@ -14,7 +14,7 @@ import pandas as pd
 #import matplotlib.pyplot as plt
 import numpy as np
 
-
+stock = st.sidebar.text_input("Stock Ticker", 'aapl')
 ticker=stock
 apikey=os.getenv("apikey")
 
@@ -36,7 +36,7 @@ syear=syear.drop_duplicates()
 #syear =pd.DataFrame(['2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021'],columns=['Year'])
 smonth=pd.DataFrame(['January','February','March','April','May','June','July','August','September','October','November','December'],columns=['Month'])
 
-stock = st.sidebar.text_input("Stock Ticker", 'aapl')
+
 option1 = st.sidebar.selectbox('Select a year',syear['Year'])
 option2 = st.sidebar.selectbox('Select a month',smonth['Month'])
 
